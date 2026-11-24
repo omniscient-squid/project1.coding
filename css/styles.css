@@ -1,0 +1,232 @@
+:root{
+	--text: rgb(130, 48, 6);
+	--text-color: #7f9f3d;
+	--accent1: #ef3e23;
+	--bg: rgb(197, 197, 201);
+	--bg-color: #ef3e23;
+
+	/* Margins*/
+	--margin-outside: 1rem;
+	--margin-bottom: 6rem;
+
+	/* Max-Width */
+	--max-width: 80rem;
+
+	/* Hover */
+}
+
+/* Global */
+body {
+	color: var(--text);
+	font-family: "BBB Herthey Futural";
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Font Sizes */
+html {
+	@media screen and (min-width: 1100px) {
+		font-size:1.1rem;
+	}
+	@media screen and (min-width: 1200px) {
+		font-size: 1.2rem;
+	}
+
+	background: var(--bg);
+}
+
+
+/* Nav */
+.site-nav {
+	width: 3rem;
+	border-radius: 5px;
+	background-color: var(--bg-color);
+	font-size: 1.5rem;
+	text-align: center;
+	top: 0;
+	right: 0;
+	position: fixed;
+	margin: var(--margin-outside);
+
+	@media screen and (min-width: 1000px) {
+		display: none;
+	}
+}
+
+/* Header */
+
+.site-header {
+	color: var(--text-color);
+	position: relative;
+	padding-top: 10rem;
+	padding-left: var(--margin-outside);
+	padding-right: var(--margin-outside);
+	padding-bottom: 10rem;
+	background-color: var(--bg-color);
+
+	@media screen and (min-width: 1000px) {
+		color: var(--accent1);
+		background-color: var(--bg);
+		padding-top: 5rem;
+		}
+}
+
+.site-title {
+	font-size: 5rem;
+	font-family: "MF Odd Mono Test";
+	text-align: center;
+
+	@media screen and (min-width: 600px) {
+	font-size: 7rem;
+	}
+
+	@media screen and (min-width: 1000px) {
+	font-size: 3rem;
+	}
+}	
+
+/* Body Parts */
+
+	.part {
+		padding-bottom: 2rem;
+		
+		em {
+			font-style: normal;
+			font-weight: bolder;
+		}
+
+		body {
+			max-width: 4rem;
+		}
+
+		@media screen and (min-width: 600px) {
+			padding: 1rem;
+		}
+
+	}
+
+	.nav_header {
+		padding-top: 3rem;
+		padding-bottom: 1rem;
+
+		@media screen and (min-width: 600px) {
+			max-width: fit-content;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	.nav_header__icon {
+		width: 50px;
+	}
+	
+	.wrapper {
+		margin-left: var(--margin-outside);
+		margin-right: var(--margin-outside);
+		margin-bottom: var(--margin-bottom);
+
+		@media screen and (min-width: 1000px) {
+			display: none;
+		}
+	}
+
+	.parts__header {
+		font-family: "PP Pangram Sans Rounded Medium";
+		font-size: 4rem;
+		text-transform: uppercase;
+		color: var(--accent1);
+
+		@media screen and (min-width: 1000px) {
+			font-size: 2rem;
+		}
+	}
+
+	.parts__image {
+		border-radius: 10px;
+		aspect-ratio: 1;
+		object-fit: cover;
+
+		@media screen and (min-width: 600px) {
+			border-radius: 0px;
+			filter: grayscale(1);
+		}
+
+		@media screen and (min-width: 1000px) {
+			max-width: 10rem;
+		}
+	}
+
+	.parts__image:hover {
+			filter:none;
+	}
+
+	/* Head */
+
+	.head {
+		@media screen and (min-width: 600px) {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	/* Torso */
+
+	.torso {
+		@media screen and (min-width: 600px) {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	/* Legs */
+
+	.legs {
+		@media screen and (min-width: 600px) {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	/* Screen 3*/
+
+	.screen_3__wrapper {
+		display: none;
+
+		@media screen and (min-width: 1000px) {
+			display: grid;
+			grid-template-columns: 2fr 1fr 1fr;
+		}
+	}
+
+	.parts__image__column{
+		width: 15rem;
+	}
+
+	.parts__head {
+		position: relative;
+			.parts__eyebrow {
+				position: absolute;
+			}
+			.parts__dimple {
+				position: absolute;
+			}
+			.parts__ear {
+				position: absolute;
+			}
+			.parts__neck {
+				position: absolute;
+			}
+	}
+
+	.parts__caption {
+		width: 15rem;
+	}
+
+
+/* Footer */
+
+.site-footer {
+	background-color: var(--accent1);
+}
